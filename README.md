@@ -1,7 +1,10 @@
 🚀 Secure User Authentication System with Supabase
 
+
 💡 Overview
+
 This project implements a secure, modern, and fully functional user authentication system using Supabase. It supports sign up, login, and protected route access, with proper session handling and security best practices.
+
 
 💡 View it here :
 https://68749679684f29d244312c27--venerable-palmier-c3ffcf.netlify.app/
@@ -41,7 +44,7 @@ bash
 Copy
 Edit
 npm install
-# or
+or
 yarn install
 3️⃣ Configure Supabase
 Create a project at Supabase, then:
@@ -58,6 +61,7 @@ Copy
 Edit
 VITE_SUPABASE_URL=*****************
 VITE_SUPABASE_ANON_KEY=***************************************************************
+
 5️⃣ Update the Supabase client
 js
 Copy
@@ -67,13 +71,15 @@ import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 export const supabase = createClient(supabaseUrl, supabaseKey)
+
 6️⃣ Start the app
 bash
 Copy
 Edit
 npm run dev
-# or
+ or
 yarn dev
+
 💻 Usage
 Visit /signup to create an account.
 
@@ -91,6 +97,7 @@ Never include your service role keys or database passwords in frontend code or p
 Always enable Row Level Security (RLS) in your Supabase tables for fine-grained access control.
 
 🌐 Deployment
+
 Deploy easily on platforms like:
 
 Vercel
